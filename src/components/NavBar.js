@@ -1,10 +1,10 @@
 import React from "react";
 import woodKeg from "./../img/woodKeg.jpg";
 
-function Header(){
+function NavBar(){
   return (
     <React.Fragment>
-      <div id="header">
+      <div id="navbar">
         <h1>Traditions Brew Tap House</h1>
         <img src={woodKeg} alt="wood keg"/>
       </div>
@@ -12,4 +12,4 @@ function Header(){
   );
 }
 
-export default Header;
+export default NavBar;
