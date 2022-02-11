@@ -18,7 +18,7 @@ handleAddNewKegToList = (newKeg) => {
   const newMainKegList = this.state.mainKegList.concat(newKeg);
   this.setState({
     mainKegList: newMainKegList, 
-    currentView: this.props.visibleContent = "home"});
+    currentView: "home"});
 }
 
 
