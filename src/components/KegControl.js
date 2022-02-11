@@ -9,19 +9,19 @@ class KegControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      visibleOnKegControl: "home" 
+      
   };
 }
 
 
   render() {
-    console.log(this.state.visibleOnKegControl);
+    console.log(this.props.visibleOnPage);
     let visibleOnPage;
-    if (this.state.visibleOnKegControl === "home") {
+    if (this.props.visibleContent === "home") {
       visibleOnPage = <AboutUs />
-    } else if (this.state.visibleOnKegControl === "kegList") {
+    } else if (this.props.visibleContent === "kegList") {
         visibleOnPage = <KegList />
-    } else if (this.state.visibleOnKegControl === "newKegForm") {
+    } else if (this.props.visibleContent === "newKegForm") {
         visibleOnPage = <NewKegForm />
     } else {
         visibleOnPage = <KegDetail />
