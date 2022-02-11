@@ -1,14 +1,48 @@
-import React from "react";
-import Keg from "./Keg";
+import React from 'react';
+import { v4 } from 'uuid';
+import PropTypes from 'prop-types';
 
 function NewKegForm(props) {
-  return(
+
+    
+  return (
     <React.Fragment>
-      <div id="keg-form">
-        <h3>Keg Form</h3>
-      </div>
+      <form>
+        <input
+            type='text'
+            name='name'
+            placeholder='Your name'
+        />
+        <input
+            type='text'
+            name='brewery'
+            placeholder='Brewery'
+        />
+        <input
+            type='text'
+            name='type'
+            placeholder='ex: IPA'
+        />
+        <input
+            type='number'
+            name='price'
+            placeholder='Price'
+        />
+        
+        <input
+          type='number'
+          name='abv'
+          placeholder='ABV' 
+        />
+      
+        <button type='submit'>Add Keg</button>
+      </form>
     </React.Fragment>
-  );
+  )
 }
 
-export default NewKegForm;
+NewKegForm.propTypes = {
+  
+}
+
+export default NewKegForm;;
