@@ -29,7 +29,7 @@ handleAddNewKegToList = (newKeg) => {
       visibleOnPage = <AboutUs />
     } else if (this.props.visibleContent === "kegList") {
         visibleOnPage = <KegList 
-                          kegList={this.mainKegList}
+                          kegList={this.state.mainKegList}
                         />
     } else if (this.props.visibleContent === "newKegForm") {
         visibleOnPage = <NewKegForm 
@@ -38,7 +38,7 @@ handleAddNewKegToList = (newKeg) => {
     } else {
         visibleOnPage = <KegDetail />
     }
-    // console.log(visibleOnPage);
+    console.log(visibleOnPage);
     // console.log(this.visibleOnKegControl);
     return ( 
       <React.Fragment>
