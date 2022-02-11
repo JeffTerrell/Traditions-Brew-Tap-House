@@ -9,12 +9,21 @@ class KegControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+      mainKegList: [],
+      currentView: this.props.visibleContent
   };
+}
+
+handleAddNewKegToList = (newKeg) => {
+  const newMainKegList = this.state.mainKegList.concat(newKeg);
+  this.setState({
+    mainKegList: newMainKegList, 
+    currentView: this.props.visibleContent = "home"});
 }
 
 
   render() {
+    console.log(this.state.mainKegList);
     console.log(this.props.visibleOnPage);
     let visibleOnPage;
     if (this.props.visibleContent === "home") {
@@ -22,7 +31,9 @@ class KegControl extends React.Component {
     } else if (this.props.visibleContent === "kegList") {
         visibleOnPage = <KegList />
     } else if (this.props.visibleContent === "newKegForm") {
-        visibleOnPage = <NewKegForm />
+        visibleOnPage = <NewKegForm 
+                          onNewKegCreation={this.handleAddNewKegToList}
+                        />
     } else {
         visibleOnPage = <KegDetail />
     }
