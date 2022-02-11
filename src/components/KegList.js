@@ -5,7 +5,7 @@ function KegList(props) {
   return(
     <React.Fragment>
       <div id="keg-list">
-        <h3>Keg Detail</h3>
+        <h3>Keg List</h3>
       </div>
       <Keg
       />

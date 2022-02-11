@@ -5,7 +5,7 @@ function NewKegForm(props) {
   return(
     <React.Fragment>
       <div id="keg-form">
-        <h3>Keg Detail</h3>
+        <h3>Keg Form</h3>
       </div>
     </React.Fragment>
   );

@@ -1,30 +1,33 @@
 import React from 'react';
-import Home from './Home';
-import NewKegForm from './NewOrderForm';
-import KegList from './OrderList';
-import KegDetail from './OrderDetail';
+import AboutUs from './AboutUs';
+import NewKegForm from './NewKegForm';
+import KegList from './KegList';
+import KegDetail from './KegDetail';
 
 class KegControl extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      visibleOnKegControl: "home"  
+      visibleOnKegControl: "home" 
   };
 }
 
 
   render() {
+    console.log(this.state.visibleOnKegControl);
     let visibleOnPage;
-    if (visibleOnKegControl === "home") {
-      visibleOnPage = <Home />
-    } else if (visibleOnKegControl === "kegList") {
+    if (this.state.visibleOnKegControl === "home") {
+      visibleOnPage = <AboutUs />
+    } else if (this.state.visibleOnKegControl === "kegList") {
         visibleOnPage = <KegList />
-    } else if (visibleOnKegControl === "newKegForm") {
+    } else if (this.state.visibleOnKegControl === "newKegForm") {
         visibleOnPage = <NewKegForm />
     } else {
         visibleOnPage = <KegDetail />
     }
+    // console.log(visibleOnPage);
+    // console.log(this.visibleOnKegControl);
     return ( 
       <React.Fragment>
         <div id="keg-control">
