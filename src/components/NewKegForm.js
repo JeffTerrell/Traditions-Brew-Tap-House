@@ -29,17 +29,15 @@ function NewKegForm(props) {
             placeholder='ex: IPA'
         />
         <input
-            type='number'
-            name='price'
-            placeholder='Price'
-        />
-        
-        <input
-          type='number'
+          type='number' step="any"
           name='abv'
           placeholder='ABV' 
         />
-      
+        <input
+            type='number'
+            name='price'
+            placeholder='Price'
+        />      
         <button type='submit'>Add Keg</button>
       </form>
     </React.Fragment>

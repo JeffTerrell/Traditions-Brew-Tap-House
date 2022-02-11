@@ -24,7 +24,6 @@ handleAddNewKegToList = (newKeg) => {
 
   render() {
     console.log(this.state.mainKegList);
-    console.log(this.props.visibleOnPage);
     let visibleOnPage;
     if (this.props.visibleContent === "home") {
       visibleOnPage = <AboutUs />
