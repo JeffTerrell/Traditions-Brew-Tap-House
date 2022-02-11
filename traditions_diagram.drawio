@@ -1,0 +1,58 @@
+<mxfile host="65bd71144e">
+    <diagram id="hM9VHlbpZ4I8vxz3HVQj" name="Page-1">
+        <mxGraphModel dx="1502" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="48" y="80" width="755" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Home" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;fontColor=#000000;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="190" y="130" width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Menu" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;fontColor=#000000;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="355" y="130" width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Add Keg" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;fontColor=#000000;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="520" y="130" width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="38" y="180" width="775" height="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Component - Home.js&lt;br&gt;(child of KegControl.js)" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="220" width="240" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="305" y="220" width="240" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Component - KegDetail.js&lt;br&gt;(child of KegControl.js)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="410" width="240" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Component - KegControl.js&lt;br&gt;(child of App.js)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="185" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;font color=&quot;#000000&quot;&gt;Component - NavBar.js&lt;br&gt;(child of App.js)&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="350" y="80" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Component - Keg.js&lt;br&gt;(child of KegList.js" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;fontColor=#000000;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="320" y="310" width="210" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;span&gt;Component - KegList.js&lt;/span&gt;&lt;br&gt;&lt;span&gt;(child of KegControl.js)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="240" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Component - Keg.js&lt;br&gt;(child of KegList.js" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;fontColor=#000000;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="320" y="375" width="210" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Component - Keg.js&lt;br&gt;(child of KegList.js" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="440" width="210" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Component - Keg.js&lt;br&gt;(child of KegList.js" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="510" width="210" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Component - NewKegForm.js&lt;br&gt;(child of KegControl.js)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;fontColor=#000000;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="560" y="220" width="240" height="170" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
