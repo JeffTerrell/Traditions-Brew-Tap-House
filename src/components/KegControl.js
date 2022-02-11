@@ -28,7 +28,9 @@ handleAddNewKegToList = (newKeg) => {
     if (this.props.visibleContent === "home") {
       visibleOnPage = <AboutUs />
     } else if (this.props.visibleContent === "kegList") {
-        visibleOnPage = <KegList />
+        visibleOnPage = <KegList 
+                          kegList={this.mainKegList}
+                        />
     } else if (this.props.visibleContent === "newKegForm") {
         visibleOnPage = <NewKegForm 
                           onNewKegCreation={this.handleAddNewKegToList}
