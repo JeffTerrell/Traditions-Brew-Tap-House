@@ -29,8 +29,7 @@ This website uses React to create a single page application that displays types 
 
 ## Known Bugs
 
-Keg details page not currently showing
-Subtract pint functionality not working
+None at this time
 
 ## License
 
