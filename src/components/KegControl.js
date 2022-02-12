@@ -21,6 +21,11 @@ handleAddNewKegToList = (newKeg) => {
     currentView: "home"});
 }
 
+handleChangingSelectedKeg = (id) => {
+  const selectedOrder = this.state.mainOrderList.filter(Order => Order.id === id)[0];
+  this.setState({selectedOrder: selectedOrder});
+}
+
 
   render() {
     console.log(this.state.mainKegList);
@@ -30,6 +35,7 @@ handleAddNewKegToList = (newKeg) => {
     } else if (this.props.visibleContent === "kegList") {
         visibleOnPage = <KegList 
                           kegList={this.state.mainKegList}
+                          onKegSelection={this.handleChangingSelectedKeg}
                         />
     } else if (this.props.visibleContent === "newKegForm") {
         visibleOnPage = <NewKegForm 
