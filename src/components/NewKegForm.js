@@ -6,7 +6,14 @@ function NewKegForm(props) {
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
-    props.onNewKegCreation({name: event.target.name.value, brewery: event.target.brewery.value, type: event.target.type.value, price: event.target.price.value, abv: event.target.abv.value, id: v4()});
+    props.onNewKegCreation({name: event.target.name.value, 
+                            brewery: event.target.brewery.value, 
+                            type: event.target.type.value, 
+                            abv: event.target.price.value, 
+                            price: event.target.abv.value,
+                            pints: event.target.pints.value, 
+                            id: v4()
+                          });
   }
   
     
@@ -32,12 +39,17 @@ function NewKegForm(props) {
           type='number' step="any"
           name='abv'
           placeholder='ABV' 
-        />
+        />  
         <input
             type='number'
             name='price'
             placeholder='Price'
-        />      
+        />
+        <input
+            type='number'
+            name='pints'
+            placeholder='124'
+        />         
         <button type='submit'>Add Keg</button>
       </form>
     </React.Fragment>

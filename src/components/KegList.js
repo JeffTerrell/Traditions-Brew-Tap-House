@@ -15,6 +15,7 @@ function KegList(props) {
           type={keg.type}
           abv={keg.abv}
           price={keg.price}
+          pints={keg.pints}
           id={keg.id}
           key={index}
         />

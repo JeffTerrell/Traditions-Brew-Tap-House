@@ -22,20 +22,31 @@ handleAddNewKegToList = (newKeg) => {
 
 handleChangingSelectedKeg = (id) => {
   const selectedKeg = this.state.mainKegList.filter(Keg => Keg.id === id)[0];
-  this.props.visibleContent=== "test",
   this.setState({selectedKeg: selectedKeg});
 }
+
+handleDecrementPintAmount = (pint) => {
+  const updatePintAmount = [...this.state.mainKegList];
+  updatePintAmount[pint].pints = updatePintAmount[pint].pints-1;
+  this.setState({
+    mainKegList: updatePintAmount
+  })
+}
+
+// add handleChangingSelectedKegValue
 
 
   render() {
     console.log(this.state.mainKegList);
     let visibleOnPage;
 
-    if (this.state.selectedKeg != null)
+    if (this.state.selectedKeg != null) {
       visibleOnPage = <KegDetail
                         keg = {this.state.selectedKeg}
-                      />
-    if (this.props.visibleContent === "home") {
+                        onDecrementPint = {this.handleDecrementPintAmount}
+                      />             
+    }                      
+    else if (this.props.visibleContent === "home") {
       visibleOnPage = <AboutUs />
     } else if (this.props.visibleContent === "kegList") {
         visibleOnPage = <KegList 
@@ -46,11 +57,12 @@ handleChangingSelectedKeg = (id) => {
         visibleOnPage = <NewKegForm 
                           onNewKegCreation={this.handleAddNewKegToList}
                         />
-    } else {
-        visibleOnPage = <KegDetail
-                          keg = {this.state.selectedKeg}
-                        />
-    }
+    }                    
+    // } else {
+    //     visibleOnPage = <KegDetail
+    //                       keg = {this.state.selectedKeg}
+    //                     />
+    // }
     console.log(visibleOnPage);
     // console.log(this.visibleOnKegControl);
     return ( 

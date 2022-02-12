@@ -12,6 +12,7 @@ function Keg(props) {
           <h6>Type: {props.type}</h6>
           <h6>ABV: {props.abv}</h6>
           <h6>Price: {props.price}</h6>
+          <h6>Pints: {props.pints}</h6>
           <hr />
         </div>  
       </div>  

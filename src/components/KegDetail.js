@@ -3,6 +3,14 @@ import PropTypes from 'prop-types';
 
 function KegDetail(props) {
   const {keg} = props;
+
+  let pintAmount;
+  if(keg.pints < 1) {
+    pintAmount = "Keg is empty";
+  } else {
+    pintAmount = <button onClick={()=>props.onDecrementPint(keg.id)}>Drink A Pint</button>;
+  }
+  console.log(keg.id);
   return(
     <React.Fragment>
       <div id="keg-detail">
@@ -12,14 +20,18 @@ function KegDetail(props) {
         <h6>Type: {keg.type}</h6>
         <h6>ABV: {keg.abv}</h6>
         <h6>Price: {keg.price}</h6>
-        <button>Pint Sold</button>
+        <h6>Pints: {keg.pints}</h6>
+        {pintAmount}
       </div>   
     </React.Fragment>
   );
 }
 
 KegDetail.propTypes = {
-  keg: PropTypes.object
+  keg: PropTypes.object,
+  keg: PropTypes.func
 };
 
 export default KegDetail;
+
+// add onClick to change state of selectedKeg
