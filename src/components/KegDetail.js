@@ -31,6 +31,7 @@ function KegDetail(props) {
 
 KegDetail.propTypes = {
   keg: PropTypes.object,
+  onDecrementPint: PropTypes.func
 };
 
 export default KegDetail;

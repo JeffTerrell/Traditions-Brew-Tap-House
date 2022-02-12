@@ -29,9 +29,9 @@ handleChangingSelectedKeg = (id) => {
 handleDecrementPintAmount = (id) => {
   const updatePintAmount = this.state.mainKegList.filter(Keg => Keg.id === id)[0];
   updatePintAmount.pints = updatePintAmount.pints-1;
+  // this.setState.mainKegList = updatePintAmount;
   this.setState({
-    mainKegList: updatePintAmount,
-    selectedKeg: updatePintAmount
+    mainKegKist: updatePintAmount
   })
 }
 // handleDecrementPintAmount = (pint) => {
