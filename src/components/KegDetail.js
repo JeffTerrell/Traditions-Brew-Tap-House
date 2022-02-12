@@ -22,7 +22,6 @@ function KegDetail(props) {
         <h6>ABV: {keg.abv}</h6>
         <h6>Price: {keg.price}</h6>
         <h6>Pints: {keg.pints}</h6>
-        <h6>Index: {keg.key}</h6>
         {pintAmount}
       </div>   
     </React.Fragment>
