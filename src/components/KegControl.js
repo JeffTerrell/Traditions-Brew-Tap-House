@@ -25,13 +25,22 @@ handleChangingSelectedKeg = (id) => {
   this.setState({selectedKeg: selectedKeg});
 }
 
-handleDecrementPintAmount = (pint) => {
-  const updatePintAmount = [...this.state.mainKegList];
-  updatePintAmount[pint].pints = updatePintAmount[pint].pints-1;
+
+handleDecrementPintAmount = (id) => {
+  const updatePintAmount = this.state.mainKegList.filter(Keg => Keg.id === id)[0];
+  updatePintAmount.pints = updatePintAmount.pints-1;
   this.setState({
-    mainKegList: updatePintAmount
+    mainKegList: updatePintAmount,
+    selectedKeg: updatePintAmount
   })
 }
+// handleDecrementPintAmount = (pint) => {
+//   const updatePintAmount = [...this.state.mainKegList];
+//   updatePintAmount[pint].pints = updatePintAmount[pint].pints-1;
+//   this.setState({
+//     mainKegList: updatePintAmount
+//   })
+// }
 
 // add handleChangingSelectedKegValue
 
@@ -43,7 +52,7 @@ handleDecrementPintAmount = (pint) => {
     if (this.state.selectedKeg != null) {
       visibleOnPage = <KegDetail
                         keg = {this.state.selectedKeg}
-                        onDecrementPint = {this.handleDecrementPintAmount}
+                        onDecrementPint = {this.handleDecrementPintAmount}                      
                       />             
     }                      
     else if (this.props.visibleContent === "home") {

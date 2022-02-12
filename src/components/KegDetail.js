@@ -11,6 +11,7 @@ function KegDetail(props) {
     pintAmount = <button onClick={()=>props.onDecrementPint(keg.id)}>Drink A Pint</button>;
   }
   console.log(keg.id);
+  console.log(keg.key);
   return(
     <React.Fragment>
       <div id="keg-detail">
@@ -21,6 +22,7 @@ function KegDetail(props) {
         <h6>ABV: {keg.abv}</h6>
         <h6>Price: {keg.price}</h6>
         <h6>Pints: {keg.pints}</h6>
+        <h6>Index: {keg.key}</h6>
         {pintAmount}
       </div>   
     </React.Fragment>
@@ -29,7 +31,6 @@ function KegDetail(props) {
 
 KegDetail.propTypes = {
   keg: PropTypes.object,
-  keg: PropTypes.func
 };
 
 export default KegDetail;
