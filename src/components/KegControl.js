@@ -41,8 +41,7 @@ handleDecrementPintAmount = (id) => {
     if (this.props.visibleContent === "detail") {
       visibleOnPage = <KegDetail
                         keg = {this.state.selectedKeg}
-                        onDecrementPint = {this.handleDecrementPintAmount}
-                        onClickExitKegDetail = {this.handleClickExitKegDetail}                      
+                        onDecrementPint = {this.handleDecrementPintAmount}                     
                       />             
     }                      
       else if (this.props.visibleContent === "home") {
