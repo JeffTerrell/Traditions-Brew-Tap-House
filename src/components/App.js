@@ -20,6 +20,7 @@ class App extends React.Component{
         />
         <KegControl 
           visibleContent={this.state.visibleOnKegControl}
+          handleClick={this.handleClick}
         />
       </React.Fragment>
     );
