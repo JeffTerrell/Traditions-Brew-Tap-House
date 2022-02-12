@@ -10,26 +10,31 @@ class KegControl extends React.Component {
     super(props);
     this.state = {
       mainKegList: [],
-      currentView: this.props.visibleContent
+      selectedKeg: null
   };
 }
 
 handleAddNewKegToList = (newKeg) => {
   const newMainKegList = this.state.mainKegList.concat(newKeg);
   this.setState({
-    mainKegList: newMainKegList, 
-    currentView: "home"});
+    mainKegList: newMainKegList});
 }
 
 handleChangingSelectedKeg = (id) => {
-  const selectedOrder = this.state.mainOrderList.filter(Order => Order.id === id)[0];
-  this.setState({selectedOrder: selectedOrder});
+  const selectedKeg = this.state.mainKegList.filter(Keg => Keg.id === id)[0];
+  this.props.visibleContent=== "test",
+  this.setState({selectedKeg: selectedKeg});
 }
 
 
   render() {
     console.log(this.state.mainKegList);
     let visibleOnPage;
+
+    if (this.state.selectedKeg != null)
+      visibleOnPage = <KegDetail
+                        keg = {this.state.selectedKeg}
+                      />
     if (this.props.visibleContent === "home") {
       visibleOnPage = <AboutUs />
     } else if (this.props.visibleContent === "kegList") {
@@ -42,7 +47,9 @@ handleChangingSelectedKeg = (id) => {
                           onNewKegCreation={this.handleAddNewKegToList}
                         />
     } else {
-        visibleOnPage = <KegDetail />
+        visibleOnPage = <KegDetail
+                          keg = {this.state.selectedKeg}
+                        />
     }
     console.log(visibleOnPage);
     // console.log(this.visibleOnKegControl);

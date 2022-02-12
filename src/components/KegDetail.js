@@ -12,6 +12,7 @@ function KegDetail(props) {
         <h6>Type: {keg.type}</h6>
         <h6>ABV: {keg.abv}</h6>
         <h6>Price: {keg.price}</h6>
+        <button>Pint Sold</button>
       </div>   
     </React.Fragment>
   );
