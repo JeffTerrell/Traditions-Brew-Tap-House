@@ -2,7 +2,7 @@
 
 #### By Jeff Terrell
 
-#### A website for a farm that features Nic Cage
+#### A website for a tap house that manages kegs
 
 ## Technologies Used
 
