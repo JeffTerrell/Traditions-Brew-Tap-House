@@ -15,7 +15,6 @@ function NewKegForm(props) {
                             id: v4()
                           });
   }
-  
     
   return (
     <React.Fragment>

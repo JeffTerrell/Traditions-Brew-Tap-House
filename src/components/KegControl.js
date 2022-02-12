@@ -27,59 +27,37 @@ handleChangingSelectedKeg = (id) => {
   this.setState({selectedKeg: selectedKeg});
 }
 
-
 handleDecrementPintAmount = (id) => {
   const updatePintAmount = this.state.mainKegList.filter(Keg => Keg.id === id)[0];
   updatePintAmount.pints = updatePintAmount.pints-1;
-  // this.setState.mainKegList = updatePintAmount;
   this.setState({
     mainKegKist: updatePintAmount,
   })
 }
 
-// handleClickExitKegDetail = () => this.setState({selectedKeg: null});
-
-// handleDecrementPintAmount = (pint) => {
-//   const updatePintAmount = [...this.state.mainKegList];
-//   updatePintAmount[pint].pints = updatePintAmount[pint].pints-1;
-//   this.setState({
-//     mainKegList: updatePintAmount
-//   })
-// }
-
-// add handleChangingSelectedKegValue
-
-
   render() {
     console.log(this.state.mainKegList);
     let visibleOnPage;
     if (this.props.visibleContent === "detail") {
-    // if (this.state.selectedKeg != null) {
       visibleOnPage = <KegDetail
                         keg = {this.state.selectedKeg}
                         onDecrementPint = {this.handleDecrementPintAmount}
                         onClickExitKegDetail = {this.handleClickExitKegDetail}                      
                       />             
     }                      
-    else if (this.props.visibleContent === "home") {
+      else if (this.props.visibleContent === "home") {
       visibleOnPage = <AboutUs />
     } else if (this.props.visibleContent === "kegList") {
         visibleOnPage = <KegList 
                           kegList={this.state.mainKegList}
                           onKegSelection={this.handleChangingSelectedKeg}
                         />
-    } else if (this.props.visibleContent === "newKegForm") {
+    } else {
         visibleOnPage = <NewKegForm 
                           onNewKegCreation={this.handleAddNewKegToList}
                         />
     }                    
-    // } else {
-    //     visibleOnPage = <KegDetail
-    //                       keg = {this.state.selectedKeg}
-    //                     />
-    // }
-    console.log(visibleOnPage);
-    // console.log(this.visibleOnKegControl);
+
     return ( 
       <React.Fragment>
         <div id="keg-control">

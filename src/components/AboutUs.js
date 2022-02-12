@@ -12,4 +12,5 @@ function AboutUs(){
     </React.Fragment>
   );
 }
+
 export default AboutUs;

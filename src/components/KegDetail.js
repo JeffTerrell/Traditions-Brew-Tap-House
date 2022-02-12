@@ -10,8 +10,6 @@ function KegDetail(props) {
   } else {
     pintAmount = <button onClick={()=>props.onDecrementPint(keg.id)}>Drink A Pint</button>;
   }
-  console.log(keg.id);
-  console.log(keg.key);
   return(
     <React.Fragment>
       <div id="keg-detail">
@@ -35,5 +33,3 @@ KegDetail.propTypes = {
 };
 
 export default KegDetail;
-
-// add onClick to change state of selectedKeg
