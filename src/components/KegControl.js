@@ -22,8 +22,8 @@ handleAddNewKegToList = (newKeg) => {
 
 handleChangingSelectedKeg = (id) => {
   const selectedKeg = this.state.mainKegList.filter(Keg => Keg.id === id)[0];
-  const test = this.props.handleClick;
-  test("detail");
+  const changeView = this.props.handleClick;
+  changeView("detail");
   this.setState({selectedKeg: selectedKeg});
 }
 

@@ -6,16 +6,16 @@ class NavBar extends React.Component{
     super(props);
   }
   render() {
-    const test = this.props.handleClick;
+    const changeView = this.props.handleClick;
 
     return (
       <React.Fragment>
         <div id="navbar">
           <h1>Traditions Brew Tap House</h1>
           <img src={woodKeg} alt="wood keg"/>
-          <button onClick={()=> test("home")}>Home</button>  
-          <button onClick={()=> test("kegList")}>Keg List</button>  
-          <button onClick={()=> test("newKegForm")}>Add Keg</button>
+          <button onClick={()=> changeView("home")}>Home</button>  
+          <button onClick={()=> changeView("kegList")}>Keg List</button>  
+          <button onClick={()=> changeView("newKegForm")}>Add Keg</button>
         </div>
       </React.Fragment>
     );
