@@ -23,7 +23,6 @@ function KegDetail(props) {
         <h6>Price: {keg.price}</h6>
         <h6>Pints: {keg.pints}</h6>
         {pintAmount}
-        <button onClick={props.onClickExitKegDetail}>Exit Keg Details</button>
       </div>   
     </React.Fragment>
   );
