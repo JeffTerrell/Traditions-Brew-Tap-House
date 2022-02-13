@@ -16,3 +16,14 @@ code {
   width: 7.5%;
   height: auto;
 }
+
+.right-align {
+  margin-top: .4vh;
+  margin-left: 60%;
+}
+
+#navbar {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+}

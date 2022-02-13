@@ -1,3 +1,4 @@
+import Container from 'react-bootstrap/Container';
 import React from "react";
 import NavBar from "./NavBar";
 import KegControl from "./KegControl";
@@ -15,13 +16,15 @@ class App extends React.Component{
   render() {
     return (
       <React.Fragment>
-        <NavBar 
-          handleClick={this.handleClick}
-        />
-        <KegControl 
-          visibleContent={this.state.visibleOnKegControl}
-          handleClick={this.handleClick}
-        />
+        <Container fluid>
+          <NavBar 
+            handleClick={this.handleClick}
+          />
+          <KegControl 
+            visibleContent={this.state.visibleOnKegControl}
+            handleClick={this.handleClick}
+          />
+        </Container>  
       </React.Fragment>
     );
   }
