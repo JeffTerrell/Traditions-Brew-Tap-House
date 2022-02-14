@@ -8,13 +8,14 @@
 
 * HTML
 * CSS
+* Bootstrap
 * Javascript
-* NPM
 * React
+* NPM
 
 ## Description
 
-This website uses React to create a single page application that displays types of kegs, their cost, and how many pints are left in them. Users are able to add new kegs, view them in a list, and subtracts pints from a specific keg.
+This website uses React to create a single page application that displays types of kegs, their cost, and how many pints are left in them. Users are able to add new kegs, view them in a list, and subtract pints from a specific keg.
 
 
 ![Design for the component layout](./traditions_component_diagram.JPG)
