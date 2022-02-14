@@ -1,5 +1,5 @@
 import React from "react";
-import woodKeg from "./../img/woodKeg.jpg";
+import kegs_bg from "./../img/kegs_bg.png";
 import Button from 'react-bootstrap/Button';
 
 class NavBar extends React.Component{
@@ -13,7 +13,7 @@ class NavBar extends React.Component{
       <React.Fragment>
         <div id="navbar">
           <h1>Traditions Brew Tap House</h1>
-          <img src={woodKeg} alt="wood keg"/>
+          <img src={kegs_bg} alt="wood kegs"/>
           <Button variant="danger" onClick={()=> changeView("home")}>Home</Button>  
           <Button variant="danger" onClick={()=> changeView("kegList")}>Keg List</Button>  
           <Button variant="danger" onClick={()=> changeView("newKegForm")}>Add Keg</Button>

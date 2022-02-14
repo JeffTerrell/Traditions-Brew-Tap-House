@@ -1,9 +1,8 @@
 body {
-  background-image: url(./img/kegs_bg.png);
+  /* background-image: url(./img/kegs_bg.png); */
   background-position: bottom 99% center;
   background-repeat: no-repeat;
-  background-size: 20%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 10%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -17,14 +16,9 @@ code {
     monospace;
 }
 
-#navbar img {
-  width: 7.5%;
-  height: auto;
-}
-
-.right-align {
-  margin-top: .4vh;
-  margin-left: 60%;
+.container {
+  box-shadow: 0 0 20px rgba(102, 102, 102);
+  padding-bottom: .1%;
 }
 
 #navbar {
@@ -34,11 +28,64 @@ code {
 }
 
 #navbar img {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
+  width: 33%;
+  height: 33%;
 }
 
-.container {
-  box-shadow: 0 0 20px rgba(0, 0, 0);
+#navbar button {
+  margin-top: 5%;
+  margin-left: 2%;
+  box-shadow: 0 0 10px rgba(102, 102, 102);
+}
+
+#about-us {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+  box-shadow: 0 0 10px rgb(102, 102, 102);
+  text-align: center;
+}
+
+#about-us img {
+  width: 10%;
+  height: 10%;
+}
+
+#keg-list {
+  margin-top: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+  box-shadow: 0 0 10px rgb(102, 102, 102);
+  text-align: center;
+}
+
+#new-keg-form {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+  box-shadow: 0 0 10px rgb(102, 102, 102);
+  text-align: center;
+}
+
+#new-keg-form button {
+  margin-top: 1%;
+  margin-bottom: .5%;
+}
+
+#keg-detail {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+  box-shadow: 0 0 10px rgb(102, 102, 102);
+  text-align: center;
+}
+
+#keg-detail button {
+  margin-bottom: 1%;
 }
