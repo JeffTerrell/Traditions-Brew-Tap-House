@@ -16,8 +16,11 @@ class KegControl extends React.Component {
 
 handleAddNewKegToList = (newKeg) => {
   const newMainKegList = this.state.mainKegList.concat(newKeg);
+  const changeView = this.props.handleClick;
+  changeView("kegList")
   this.setState({
-    mainKegList: newMainKegList});
+    mainKegList: newMainKegList
+  });
 }
 
 handleChangingSelectedKeg = (id) => {
@@ -36,7 +39,6 @@ handleDecrementPintAmount = (id) => {
 }
 
   render() {
-    console.log(this.state.mainKegList);
     let visibleOnPage;
     if (this.props.visibleContent === "detail") {
       visibleOnPage = <KegDetail
@@ -54,6 +56,7 @@ handleDecrementPintAmount = (id) => {
     } else {
         visibleOnPage = <NewKegForm 
                           onNewKegCreation={this.handleAddNewKegToList}
+                          handleClickAgain={this.props.handleClick}
                         />
     }                    
 
