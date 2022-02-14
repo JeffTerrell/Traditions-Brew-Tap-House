@@ -47,7 +47,7 @@ handleDecrementPintAmount = (id) => {
                       />             
     }                      
       else if (this.props.visibleContent === "home") {
-      visibleOnPage = <AboutUs />
+        visibleOnPage = <AboutUs />
     } else if (this.props.visibleContent === "kegList") {
         visibleOnPage = <KegList 
                           kegList={this.state.mainKegList}
