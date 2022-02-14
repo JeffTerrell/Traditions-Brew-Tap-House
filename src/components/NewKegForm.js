@@ -22,7 +22,7 @@ function NewKegForm(props) {
         <input
             type='text'
             name='name'
-            placeholder='Your name'
+            placeholder='Keg Name'
         />
         <input
             type='text'
@@ -32,7 +32,7 @@ function NewKegForm(props) {
         <input
             type='text'
             name='type'
-            placeholder='ex: IPA'
+            placeholder='Type: (e.g. IPA)'
         />
         <input
           type='number' step="any"
@@ -47,7 +47,8 @@ function NewKegForm(props) {
         <input
             type='number'
             name='pints'
-            placeholder='124'
+            placeholder='pints'
+            max='140'
         />         
         <button type='submit'>Add Keg</button>
       </form>

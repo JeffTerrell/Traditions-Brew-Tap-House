@@ -16,7 +16,7 @@ class App extends React.Component{
   render() {
     return (
       <React.Fragment>
-        <Container fluid>
+        <div class="container fluid">
           <NavBar 
             handleClick={this.handleClick}
           />
@@ -24,7 +24,7 @@ class App extends React.Component{
             visibleContent={this.state.visibleOnKegControl}
             handleClick={this.handleClick}
           />
-        </Container>  
+        </div>  
       </React.Fragment>
     );
   }
