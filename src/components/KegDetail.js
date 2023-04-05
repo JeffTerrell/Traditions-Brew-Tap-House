@@ -9,7 +9,7 @@ function KegDetail(props) {
   if(keg.pints < 1) {
     pintAmount = "Keg is empty"  
   } else {
-    pintAmount = <Button variant="warning" onClick={()=>props.onDecrementPint(keg.id)}>Drink A Pint</Button>;
+    pintAmount = <Button variant="danger" onClick={()=>props.onDecrementPint(keg.id)}>Drink A Pint</Button>;
   }
   return(
     <React.Fragment>
